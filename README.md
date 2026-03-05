@@ -1,21 +1,6 @@
-# 🦞 JobClaw — Autonomous AI Job Hunting Agent
+# JobClaw — Autonomous AI Job Hunting Agent
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/openclaw/openclaw/main/docs/assets/openclaw-logo-text.png" alt="JobClaw" width="400">
-</p>
-
-<p align="center">
-  <strong>Find it. Research it. Apply. On autopilot.</strong>
-</p>
-
-<p align="center">
-  <a href="https://github.com/RhythrosaLabs/jobclaw/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="MIT License"></a>
-  <img src="https://img.shields.io/badge/Built_on-OpenClaw-orange?style=for-the-badge" alt="Built on OpenClaw">
-  <img src="https://img.shields.io/badge/Node-%E2%89%A522-green?style=for-the-badge&logo=node.js" alt="Node ≥22">
-  <img src="https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript" alt="TypeScript">
-</p>
-
----
+**Find it. Research it. Apply. On autopilot.**
 
 **JobClaw** is an autonomous AI job hunting agent built on top of [OpenClaw](https://openclaw.ai). It handles the entire job search lifecycle end-to-end: building your candidate profile, scraping 15+ job boards, researching companies, generating tailored resumes and cover letters, and automatically filling and submitting applications — all through a conversational interface or fully on autopilot.
 
@@ -25,11 +10,11 @@
 
 ## What it does
 
-### 1. 🧑‍💼 Profile Building
+### 1. Profile Building
 
 Interactive interview that extracts your experience, skills, preferences, and career goals into a structured candidate profile. Or paste your existing resume and it extracts everything automatically.
 
-### 2. 🔍 Multi-Source Job Search
+### 2. Multi-Source Job Search
 
 Scrapes **15+ job boards and career pages** simultaneously, including:
 
@@ -39,11 +24,11 @@ Scrapes **15+ job boards and career pages** simultaneously, including:
 - Direct company career pages for your target companies
 - Configurable refresh interval (default: every 60 minutes)
 
-### 3. 🎯 Intelligent Job Matching
+### 3. Intelligent Job Matching
 
 Every listing is scored against your profile using both heuristic rules and LLM-powered semantic analysis — so you only see roles that actually fit.
 
-### 4. 🏢 Deep Company Research
+### 4. Deep Company Research
 
 Before you apply, JobClaw investigates:
 
@@ -52,29 +37,17 @@ Before you apply, JobClaw investigates:
 - Recent news, leadership changes, and competitive position
 - Key contacts and hiring managers
 
-### 5. 📄 Document Generation
+### 5. Document Generation
 
 Generates **ATS-optimized, company-tailored** resumes and cover letters for each application. Tone-matched to the company's voice. Formatted as PDF or DOCX.
 
-### 6. 🤖 Automated Application Submission
+### 6. Automated Application Submission
 
 Detects application form types (Greenhouse, Lever, Workday, custom), fills every field, uploads documents, answers screening questions, and submits — with or without your confirmation.
 
-### 7. 📊 Tracking & Follow-Up
+### 7. Tracking & Follow-Up
 
 Tracks every application's status and drafts strategic follow-up emails at the right time.
-
----
-
-## Showcase
-
-| Job search across 15+ boards                      | Tailored resume generation                               |
-| ------------------------------------------------- | -------------------------------------------------------- |
-| ![Job search](docs/assets/showcase/padel-cli.svg) | ![Resume generation](docs/assets/showcase/bambu-cli.png) |
-
-| Company research briefing                                 | Application pipeline status                              |
-| --------------------------------------------------------- | -------------------------------------------------------- |
-| ![Company research](docs/assets/showcase/oura-health.png) | ![Tracking](docs/assets/showcase/pr-review-telegram.jpg) |
 
 ---
 
@@ -251,7 +224,7 @@ Scraper     Researcher    Generator
       (Browser automation)
 ```
 
-JobClaw runs as an OpenClaw plugin. OpenClaw's gateway manages sessions, scheduling (cron), browser automation, and multi-channel delivery — so JobClaw can message you on **WhatsApp, Telegram, Slack, Discord**, or any other connected channel with updates and questions.
+JobClaw runs as an OpenClaw plugin. OpenClaw's gateway manages sessions, scheduling (cron), browser automation, and multi-channel delivery — so JobClaw can message you on WhatsApp, Telegram, Slack, Discord, or any other connected channel with updates and questions.
 
 ---
 
@@ -282,13 +255,7 @@ The job-hunter extension lives in `extensions/job-hunter/`. The skill prompt is 
 
 ## Built on OpenClaw
 
-JobClaw is the job hunting extension for [OpenClaw](https://openclaw.ai) — an open-source personal AI assistant platform. OpenClaw provides:
-
-- The WebSocket gateway and session management
-- Browser automation (Chrome/Chromium via CDP)
-- Multi-channel messaging (WhatsApp, Telegram, Slack, Discord, iMessage, Signal, and 20+ more)
-- Cron scheduling and webhooks
-- Plugin SDK for extensions like this one
+JobClaw is the job hunting extension for [OpenClaw](https://openclaw.ai) — an open-source personal AI assistant platform. OpenClaw provides the WebSocket gateway, browser automation, multi-channel messaging, cron scheduling, and plugin SDK that JobClaw builds on.
 
 [OpenClaw docs](https://docs.openclaw.ai) · [OpenClaw repo](https://github.com/openclaw/openclaw) · [Discord](https://discord.gg/clawd)
 
